@@ -20,14 +20,15 @@ defmodule GoogleProtos.MixProject do
 
   defp deps do
     [
-      {:protobuf, "~> 0.5"},
+      {:protobuf, "~> 0.8.0", organization: "tubitv"},
       {:ex_doc, ">= 0.0.0", only: :dev},
     ]
   end
 
   defp package do
     [
-      maintainers: ["Tony Han"],
+      organization: "tubitv",
+      maintainers: "",
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/tony612/google-protos"},
       files: ~w(mix.exs README.md lib config LICENSE)
