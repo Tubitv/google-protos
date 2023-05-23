@@ -5,8 +5,8 @@ defmodule GoogleProtos.MixProject do
     [
       app: :google_protos,
       name: "Google Protos",
-      version: "0.1.0",
-      elixir: "~> 1.4",
+      version: "0.3.1",
+      elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Protos by Google",
@@ -20,8 +20,8 @@ defmodule GoogleProtos.MixProject do
 
   defp deps do
     [
-      {:protobuf, "~> 0.8.0", organization: "tubitv"},
-      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:protobuf, "~> 0.11.1", organization: "tubitv"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
@@ -30,8 +30,8 @@ defmodule GoogleProtos.MixProject do
       organization: "tubitv",
       maintainers: "",
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/tony612/google-protos"},
-      files: ~w(mix.exs README.md lib config LICENSE)
+      links: %{"GitHub" => "https://github.com/Tubitv/google-protos"},
+      files: ~w(mix.exs README.md lib LICENSE)
     ]
   end
 end
