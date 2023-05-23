@@ -20,7 +20,7 @@ defmodule GoogleProtos.MixProject do
 
   defp deps do
     [
-      {:protobuf, ">= 0.10.0"},
+      {:protobuf, "~> 0.11.1", organization: "tubitv"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
